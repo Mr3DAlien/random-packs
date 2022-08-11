@@ -1,0 +1,21 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "structure": "minecraft:mansion",
+      "light": {
+        "light": {
+          "min": 7,
+          "max": 15
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:time_check",
+    "value": {
+      "min": 13000,
+      "max": 24000
+    }
+  }
+]

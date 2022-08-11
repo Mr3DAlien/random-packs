@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:allay,nbt=!{DuplicationCooldown:-1L},nbt={CanDuplicate:1b}] at @s unless predicate harder_allay_duplication:mansion_check run data merge entity @s {CanDuplicate:0b,DuplicationCooldown:-1L}
+execute as @e[type=minecraft:allay,nbt={DuplicationCooldown:-1L,CanDuplicate:0b}] at @s if predicate harder_allay_duplication:mansion_check run data merge entity @s {CanDuplicate:1b,DuplicationCooldown:6000L}
